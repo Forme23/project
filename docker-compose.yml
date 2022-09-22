@@ -1,0 +1,15 @@
+mysql:
+  image: mariadb
+  environment:
+   MYSQL_ROOT_PASSWORD: 148866
+
+phpmyadmin:
+  image: corbinu/docker-phpmyadmin
+  restart: always
+  links:
+   - mysql:mysql
+  ports:
+   - 8183:80
+  environment:
+   MYSQL_USERNAME: illya
+   MYSQL_ROOT_PASSWORD: 148866
