@@ -1,7 +1,7 @@
 mysql:
   image: mariadb
   environment:
-   MYSQL_ROOT_PASSWORD: 148866
+   MYSQL_ROOT_PASSWORD: 
 
 phpmyadmin:
   image: corbinu/docker-phpmyadmin
@@ -12,4 +12,4 @@ phpmyadmin:
    - 8183:80
   environment:
    MYSQL_USERNAME: illya
-   MYSQL_ROOT_PASSWORD: 148866
+   MYSQL_ROOT_PASSWORD: 
